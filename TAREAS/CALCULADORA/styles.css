@@ -1,5 +1,5 @@
-#calculadora{
-    width: 80%;
+#calculadora {
+    width: 70%;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -8,7 +8,7 @@
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
-input{
+input {
     width: 15%;
     padding: 10px;
     margin-bottom: 10px;
@@ -16,10 +16,9 @@ input{
     border-radius: 15px;
     font-size: 12px;
     background: (90deg, #efd5ff 0%, #515ada 100%)
-    
 }
 
-#display{
+#display {
     width: 90%;
     padding: 10px;
     margin-bottom: 10px;
@@ -29,7 +28,7 @@ input{
     text-align: right;
 }
 
-h1{
+h1 {
     font-size: 27px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -38,7 +37,7 @@ h1{
     text-align: center;
 }
 
-input:hover{
+input:hover {
     background: #f0f0f0;
     background-color: palevioletred;
 }
