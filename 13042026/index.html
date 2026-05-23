@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Generador de QR</title>
+</head>
+<body>
+    <header>
+        <h1>Generador de QR</h1>
+    </header>
+    <div id="generador">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo: " required maxlength="150">
+        <br>
+        <label for="telefono">Número de teléfono</label>
+        <input type="text" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono: " required maxlength="150"
+        pattern="[0-9]{10}">
+        <br>
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico: " required maxlength="150">
+        <br>
+        <label for="institucion">Selecciona institución</label>
+        <input id="institucion" list="instituciones" name="institucion" placeholder="Selecciona tu institución: " required maxlength="150">
+        <datalist id="instituciones">
+            <option value="Instituto Tecnológico de Morelia"></option>
+            <option value="Instituto Tecnológico de Ciudad Hidalgo"></option>
+            <option value="Instituto Tecnológico de Morelia"></option>
+            <option value="Instituto Tecnológico de Ciudad Hidalgo"></option>
+            <option value="Arriba los pumas de la UNAM CU CU PUMAS"></option>
+        </datalist>
+        <br><br>
+        
+    </div>
+    <div id="qr">
+        <button onclick="generarQR()">Generar QR</button>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>

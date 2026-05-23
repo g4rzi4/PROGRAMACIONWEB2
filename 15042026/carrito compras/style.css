@@ -1,0 +1,12 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}

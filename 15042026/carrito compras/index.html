@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-productos">
+            <!-- Aqui se mostraran los productos agregados al carrito de compras. -->
+        </ul>
+    </div>
+
+    <!-- formulario para agregar productos al carrito de compras -->
+     <form id="formulario-producto">
+        <label for="nombre-producto">Nombre del producto:</label>
+        <input type="text" id="nombre" placeholder="Nombre del producto" required>
+        <br><br>
+        <label for="precio-producto">Precio del producto:</label>
+        <input type="number" id="precio" placeholder="Precio del producto" step="0.01" required>
+        <br><br>
+        <label for="cantidad-producto">Cantidad del producto:</label>
+        <input type="number" id="cantidad" placeholder="Cantidad del producto" min="1" required>
+        <br><br>
+        <button type="submit">Agregar al carrito</button>
+     </form>
+</body>
+<script src="./app.js"></script>
+</html>
